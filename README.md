@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 
-Home work HTML Goit
+Home work HTML Goit and CSS

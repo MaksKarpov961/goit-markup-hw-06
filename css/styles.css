@@ -2,10 +2,56 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color:#fff;
+    max-width: 1440px;
+    margin: auto;
 }
 
-a { text-decoration: none;}
-ul {list-style: none; }
+a { text-decoration: none;
+    padding: 0;
+}
+
+ul {list-style: none; 
+    margin:0;
+    padding-left:0; 
+}
+
+h1,h2,h3,p { margin:0;}
+
+.container{
+    width: 1158px;
+    margin: 0 auto;
+}
+
+section {padding:120px 0;}
+
+header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.container-navigation{
+    width: 1158px;
+    display: flex;
+    margin:24px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navigation-box{
+    display: flex;
+}
+
+.navigation-menu{
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+}
+
+.contacts {
+    display: flex;
+    font-style: normal;
+    gap: 40px;
+    margin-left: 332px;
+}
 
 .logo-web{
     font-family: "Raleway", sans-serif;
@@ -27,19 +73,8 @@ ul {list-style: none; }
     color: #2e2f42;
 }
 
-.logo-stud-under{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #f4f4fd;
-}
 
-.contacts {
-    font-style: normal;
-}
+
 
 .page-navigation-menu{
     font-weight: 500;
@@ -75,7 +110,9 @@ ul {list-style: none; }
 
 .main-page-container{
     background: #2e2f42;
+    
 }
+
 
 .main-page-title{
     font-weight: 700;
@@ -84,6 +121,7 @@ ul {list-style: none; }
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+
 }
 
 .main-page-btn{
@@ -94,6 +132,11 @@ ul {list-style: none; }
     color: #fff;
     background: #4d5ae5;
     cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    margin-left: 495px;
+    margin-top: 48px;
 }
 
 .main-page-btn:hover{
@@ -104,12 +147,32 @@ ul {list-style: none; }
     background: #404bbf;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page-advantages-cont{
+    display: flex;
+    gap: 24px;
+}
+
+
 .page-advantages-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .page-advantages-text{
@@ -129,11 +192,18 @@ ul {list-style: none; }
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    text-transform: capitalize
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-page-photo-cont{
+    display: flex;
+    gap: 24px;
 }
 
 .team-page-photo-box {
     background-color: #fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-page-photo-name{
@@ -141,14 +211,22 @@ ul {list-style: none; }
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
+    padding-top: 32px;
 }
 
 .team-page-photo-descr{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 32px;
 }
+
+
+
 
 .portfolio-page-title{
     font-weight: 700;
@@ -157,7 +235,21 @@ ul {list-style: none; }
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    text-transform: capitalize
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio-photo-cont {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+
+}
+
+.portfolio-photo-box {
+    border: 1px solid #e7e9fc;
+    width: calc(100% - 24px) / 3;
 }
 
 .portfolio-page-photo-title{
@@ -166,16 +258,33 @@ ul {list-style: none; }
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-top: 32px;
+    margin-left: 16px;
 }
 
 .portfolio-page-photo-descr{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    margin-left: 16px;
 }
 
 .under-page{
     background: #2e2f42;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.logo-stud-under {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
 }
 
 .text-under-page{
@@ -184,4 +293,5 @@ ul {list-style: none; }
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    margin-top: 16px;
 }
