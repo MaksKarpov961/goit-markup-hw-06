@@ -20,13 +20,19 @@ h1,h2,h3,p { margin:0;}
 .container{
     width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 section {padding:120px 0;}
 
-header {
+.header {
     border-bottom: 1px solid #e7e9fc;
 }
+
+img {display: block;}
+
+
+
 
 .container-navigation{
     width: 1158px;
@@ -38,12 +44,13 @@ header {
 
 .navigation-box{
     display: flex;
+    align-items: center;
+    padding: 24px 0;
 }
 
 .navigation-menu{
     display: flex;
     gap: 40px;
-    margin-left: 76px;
 }
 
 .contacts {
@@ -61,6 +68,7 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-stud{
@@ -72,9 +80,6 @@ header {
     text-transform: uppercase;
     color: #2e2f42;
 }
-
-
-
 
 .page-navigation-menu{
     font-weight: 500;
@@ -108,8 +113,13 @@ header {
     color: #404bbf;
 }
 
+
+
+
+
 .main-page-container{
     background: #2e2f42;
+    padding: 188px 0;
     
 }
 
@@ -119,12 +129,18 @@ header {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin-left: 331px;
 
 }
 
 .main-page-btn{
+    display: block;
+    align-items: center;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -147,6 +163,11 @@ header {
     background: #404bbf;
 }
 
+
+.section-advantages{
+    padding: 120px 0
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -165,6 +186,9 @@ header {
     gap: 24px;
 }
 
+.page-advantages-cont-first-list{
+    width: calc((100% - 72px) / 4);
+}
 
 .page-advantages-title{
     font-weight: 500;
@@ -277,6 +301,17 @@ header {
     padding-top: 100px;
 }
 
+.logo-web-under {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-bottom: 16px;
+}
+
 .logo-stud-under {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -285,6 +320,7 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
+    margin-bottom: 16px;
 }
 
 .text-under-page{
@@ -293,5 +329,4 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 16px;
 }
