@@ -201,6 +201,17 @@ img {
     letter-spacing: 0.02em;
 }
 
+.advantages-icon{
+    padding: 24px 100px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+}
+
+
+
 
 
 
@@ -254,6 +265,21 @@ img {
     text-align: center;
 }
 
+.ourteam-list-icon{
+    display: flex;
+    gap: 24px;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.ourteam-icon {
+    fill: #4d5ae5;
+}
+
+.ourteam-icon:hover{
+    fill: #404bbf;
+}
+
 
 
 .portfolio-title {
@@ -302,7 +328,42 @@ img {
     letter-spacing: 0.02em;
 }
 
+.portfolio-overley-img{
+    position: relative;
+    overflow: hidden;
+    width: 360px;
+    height: 300px;
 
+}
+
+
+.portfolio-overley-text{
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+
+    background: #4d5ae5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.portfolio-overley-img:hover .portfolio-overley-text{
+    transform: translateY(0);
+}
+
+.portfolio-overley-img:focus .portfolio-overley-text {
+    transform: translateY(0);
+}
 
 .footer {
     background: #2e2f42;
