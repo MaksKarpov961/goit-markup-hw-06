@@ -38,7 +38,6 @@ img {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    
 }
 
 .header-container {
@@ -75,6 +74,7 @@ img {
 .nav-list {
     display: flex;
     gap: 40px;
+
 }
 
 .nav-link {
@@ -85,7 +85,25 @@ img {
     color: #2e2f42;
     padding: 24px 0;
     display: block;
+    position: relative;
+
+
 }
+
+    
+    /* Додаємо підкреслення за допомогою псевдоелементу ::after */
+.nav-link:hover:after, .nav-link:active:after,  .nav-link:focus:after{
+    content: '';
+    position: absolute;
+    border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    background: #404bbf;
+    top: 94%;
+    right: 0;
+    
+    }
+
 
 .nav-link:hover,.nav-link:focus,.nav-link:active {
     color: #404bbf;
