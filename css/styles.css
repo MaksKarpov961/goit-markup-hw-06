@@ -303,7 +303,7 @@ img {
 .ourteam-icon-item{
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ourteam-icon-link{
@@ -322,14 +322,7 @@ img {
 
 .ourteam-icon-item .ourteam-icon{
     fill: #f4f4fd;
-    background-color: #4d5ae5;
 }
-
-
-.ourteam-icon-item .ourteam-icon:hover, .ourteam-icon-item .ourteam-icon:focus {
-    background-color: #404bbf;
-}
-
 
 .portfolio-title {
     font-weight: 700;
