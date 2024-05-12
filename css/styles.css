@@ -294,22 +294,34 @@ img {
     text-align: center;
 }
 
-.ourteam-list-icon{
+.ourteam-icon-list{
     display: flex;
+    justify-content: center;
     gap: 24px;
-    padding-left: 16px;
-    padding-top: 8px;
 }
 
-.ourteam-icon {
-    fill: #4d5ae5;
+.ourteam-icon-item{
+    width: 40px;
+    height: 40px;
 }
 
-.ourteam-icon:hover{
-    fill: #404bbf;
+.ourteam-icon-link{
+    width: 100%;
+    height: 100%;
+    background-color:#4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.ourteam-icon-link:hover,.ourteam-icon-link:focus {
+    background-color: #404bbf;
+}
 
+.ourteam-icon{
+    fill: #f4f4fd;
+}
 
 .portfolio-title {
     font-weight: 700;
