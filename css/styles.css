@@ -821,6 +821,7 @@ img {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .feedback-input-checkbox:checked+label .feedback-text-span {
