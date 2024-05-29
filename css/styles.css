@@ -947,7 +947,25 @@ img {
 
 
 @media screen and (min-width: 1158px){
+.footer {
+        padding: 100px 15px;
+    }
 
+.footer-cont{
+    flex-wrap: nowrap;
+}
+
+.footer-logo-box{
+    margin-right: 120px;
+}
+
+.footer-social{
+    margin-right: 80px;
+}
+
+.footer-cont{
+    gap: 0;
+}
 
 
 
