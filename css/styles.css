@@ -254,7 +254,21 @@ body {
 }
 
 
+/* Базові стилі і 1x зображення
+.box {
+    width: 200px;
+    height: 300px;
+    background-image: url('photo.png');
+    background-size: 200px 300px;
+}
 
+/* Перевизначаємо шлях до зображення
+   якщо щільність екрана як мінімум 2x */
+/* @media (min-resolution: 192dpi) {
+    .box {
+        background-image: url('photo@2x.png'); */
+    /* } */
+/* } */
 
 
 
@@ -269,12 +283,81 @@ body {
     background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(.././images/main-page-fone-office.jpg);
+            url(./../images/fone-people-office-mobile.jpg);
     background-size: cover;
     margin: 0 auto;
-    max-width: 320px;
+    width: 320px;
+    height: 432px;
 
 }
+
+
+@media (min-resolution: 192dpi) {
+    .section-solutions {
+        background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(./../images/fone-people-office-mobile@2x.jpg);
+}
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+.section-solutions {
+    background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(./../images/fone-people-office-tablet.jpg);
+    width: 768px;
+    height: 436px;
+    
+    }
+    
+    
+    @media (min-resolution: 192dpi) {
+        .section-solutions {
+            background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(./../images/fone-people-office-tablet@2x.jpg);
+            }
+        }
+
+}
+
+
+
+
+@media screen and (min-width: 1158px){
+
+.section-solutions {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(./../images/fone-people-office-desktop.jpg);
+        width: 1440px;
+        height: 600px;
+
+    }
+
+
+    @media (min-resolution: 192dpi) {
+        .section-solutions {
+            background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(./../images/fone-people-office-desktop@2x.jpg);
+        }
+    }
+
+
+
+}
+
 
 .solutions-title {
     font-weight: 700;
@@ -401,6 +484,10 @@ body {
     width: calc((100% - 24px ) / 2);
 }
 
+.advantages-title {
+    text-align: start;
+}
+
 }
 
 
@@ -435,7 +522,6 @@ body {
 
 }
 .advantages-title{
-    text-align: start;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -695,7 +781,6 @@ body {
 
     .portfolio-img {
         width: 360px;
-        height: 300px;
     }
 
     .portfolio-overley-img {
@@ -905,14 +990,12 @@ body {
 
 
 
-
 @media screen and (min-width: 768px){
 
-.footer{
-    padding-left: 108px;
-}
+
 
 .footer-cont{
+    width: 584px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -931,9 +1014,6 @@ body {
 
 .footer-dscr{
     width: 264px;
-}
-
-.footer-icon-list{
 }
 
 .footer-socila-descr{
@@ -960,6 +1040,7 @@ body {
     }
 
 .footer-cont{
+    width: 100%;
     flex-wrap: nowrap;
 }
 
@@ -987,7 +1068,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 640px;
+    height: 100%;
     z-index: 999;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
@@ -1059,6 +1140,8 @@ body {
     color: #2e2f42;
 }
 
+
+
 .mobile-menu-link:hover,.mobile-menu-link:focus{
     color: #404bbf;
 }
@@ -1071,6 +1154,7 @@ body {
 }
 
 .mobile-address-link {
+    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -1081,6 +1165,10 @@ body {
 .mobile-address-link:hover,
 .mobile-address-link:focus {
     color: #4d5ae5;
+}
+
+.current {
+    color: #404bbf;
 }
 
 .mobile-icon-list {
